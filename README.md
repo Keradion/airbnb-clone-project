@@ -1,33 +1,87 @@
-The Airbnb Clone Project Blueprint
+Airbnb Clone Project
+Project Overview
 
-About the Project
+The Airbnb Clone project simulates a real-world booking platform. It focuses on backend systems, database design, API development, and security. The goal is to build a scalable, secure, and maintainable web application using modern development practices.
 
-The Airbnb Clone Project is a comprehensive, real-world application designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security. This project enables learners to understand complex architectures, workflows, and collaborative team dynamics while building a scalable web application.
+Tech Stack: Django, MySQL, GraphQL, Docker, GitHub Actions
 
-Learning Objective
+Team Roles
 
-This project is tailored to enhance your expertise in modern software development practices. By completing these tasks, learners will:
+Backend Developer: Implements server-side logic, APIs, and database interactions.
 
-Master collaborative team workflows using GitHub. Deepen their understanding of backend architecture and database design principles. Implement advanced security measures for API development. Gain proficiency in designing and managing CI/CD pipelines for efficient deployment. Strengthen their ability to document and plan complex software projects effectively. Develop an understanding of integrating technologies like Django, MySQL, and GraphQL in a unified ecosystem. Requirements
+Database Administrator: Designs and manages relational databases, ensuring data integrity and efficiency.
 
-To successfully complete the project tasks, learners must:
+DevOps Engineer: Maintains CI/CD pipelines, deployment workflows, and system reliability.
 
-Have a GitHub account to create and manage repositories. Be familiar with Markdown syntax for README.md file creation. Possess prior experience with backend frameworks like Django and database systems such as MySQL. Understand software development lifecycle practices, including security, CI/CD, and database design. Be comfortable with modern tools such as Docker, GitHub Actions, or similar CI/CD platforms. Key Highlights Hands-on GitHub Repository Management: Learn to initialize and structure a project repository, adhering to industry best practices.
+Frontend Developer: Integrates the frontend with backend APIs (if applicable).
 
-Team Role Documentation:
+QA Engineer: Tests the application to ensure correct functionality and quality.
 
-Understand and articulate the responsibilities of various team members, fostering collaboration in real-world scenarios.
+Technology Stack
 
-Technology Stack Breakdown:
+Django: A web framework for building RESTful APIs efficiently.
 
-Explore the technologies used in a scalable project and their specific contributions to achieving project goals.
+MySQL: Relational database to store users, bookings, properties, and payments.
 
-Database Design Proficiency:
+GraphQL: Provides flexible and efficient data querying for frontend consumption.
 
-Plan and document a relational database structure with entities, attributes, and relationships that mirror real-world requirements.
+Docker: Ensures consistent development and deployment environments.
 
-Feature-Driven Development:
+GitHub Actions: Automates CI/CD pipelines for testing, building, and deployment.
 
+Database Design
+
+Entities & Key Fields:
+
+User: id, name, email, password, role
+
+Property: id, title, description, location, owner_id
+
+Booking: id, user_id, property_id, start_date, end_date
+
+Review: id, user_id, property_id, rating, comment
+
+Payment: id, booking_id, amount, status
+
+Relationships:
+
+A user can own multiple properties.
+
+A booking belongs to a single user and property.
+
+Reviews are linked to both users and properties.
+
+Payments are associated with bookings.
+
+Feature Breakdown
+
+User Management: Allows registration, login, and profile management.
+
+Property Management: Enables creation, updating, and deletion of property listings.
+
+Booking System: Users can book properties for selected dates.
+
+Reviews & Ratings: Users can provide feedback on properties.
+
+Payments: Secure handling of booking transactions.
+
+API Security
+
+Authentication: Verifies users before granting access.
+
+Authorization: Restricts actions based on user roles.
+
+Rate Limiting: Prevents abuse and excessive API requests.
+
+Data Protection: Sensitive data, including user information and payments, is encrypted.
+
+Importance: Ensures user privacy, prevents fraud, and secures financial transactions.
+
+CI/CD Pipeline
+
+CI/CD pipelines automate testing, integration, and deployment, reducing human error and improving efficiency.
+
+Tools Used: GitHub Actions, Docker
 Identify and describe core features of the application, focusing on their relevance to the user experience and business logic.
 
 API Security Fundamentals:
